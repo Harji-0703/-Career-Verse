@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CareerVerse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bg-music" loop>
+  <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b9b5c7c.mp3">
+</audio>
+
+<div class="game">
+
+<div id="welcome-screen">
+  <h1 class="title">✨ CareerVerse ✨</h1>
+  <p class="tagline">Not just a game… your future story begins here.</p>
+  <button onclick="showForm()">Begin Journey 🚀</button>
+</div>
+
+<div id="start-screen" class="hidden">
+  <input id="name" placeholder="Enter your name">
+  <input id="marks" placeholder="Your 12th %">
+  <button onclick="startGame()">Step Into Your Future</button>
+</div>
+
+<div id="game-screen" class="hidden">
+  <div class="speech" id="dialogue"></div>
+  <div id="choices"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
